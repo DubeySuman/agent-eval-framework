@@ -1,0 +1,27 @@
+# Acme multi-agent configuration
+# Each entry: name, endpoint (full URL to agent API), model (agent model ID)
+agents:
+  nova:
+    name: Nova
+    endpoint: "https://agent-api.example.com/v1/chat/completions"
+    model: "agentos/nova"
+
+  mira:
+    name: Mira
+    endpoint: "${API_BASE_URL}/chat/completions"
+    model: "agentos/mira"
+
+  juno:
+    name: Juno
+    endpoint: "${API_BASE_URL}/chat/completions"
+    model: "agentos/juno"
+
+  kai:
+    name: Kai
+    endpoint: "${API_BASE_URL}/chat/completions"
+    model: "agentos/kai"
+
+  remy:
+    name: Remy
+    endpoint: "${API_BASE_URL}/chat/completions"
+    model: "agentos/remy"

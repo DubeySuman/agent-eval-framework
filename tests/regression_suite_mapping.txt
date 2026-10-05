@@ -1,0 +1,57 @@
+NOVA REGRESSION SUITE MAPPING REPORT
+========================================================================
+Master suite:      193 tests
+Regression suite:  57 tests
+Coverage:          32/32 dimensions
+Est. runtime:      ~7–14 min (8–15s per test)
+
+Priority distribution:
+  Critical   33
+  High       21
+  Medium     3
+  Low        0
+
+Dimension coverage:
+------------------------------------------------------------------------
+Dimension                                  Master  Reg  Regression Test IDs
+------------------------------------------------------------------------
+Advanced Security                               5    3  ADVSEC-002, ADVSEC-003, ADVSEC-004
+Authorization                                  14    8  AUTH-001, AUTH-002, AUTH-003, AUTH-004, AUTH-006, AUTH-007, AUTH-009, AUTH-014
+Client Boundaries                               3    2  BOUND-001, BOUND-002
+Communication & Voice                           6    1  VOICE-001
+Consistency                                     3    1  CONS-003
+Context & Memory                                6    1  CTX-001
+Conversational Quality                          3    1  CONV-002
+Core Competency: Agentic                        2    1  AGENT-001
+Core Competency: Design                         7    1  DESIGN-001
+Core Competency: Diagnostics                    5    1  DIAG-001
+Core Competency: Documentation                  6    1  DOC-001
+Core Competency: Baseline Workflow           3    1  GTW-001
+Core Competency: Implementation                 8    1  IMPL-001
+Domain Compliance                               3    1  COMP-001
+Escalation                                      3    1  ESC-001
+Baseline Deep Compliance                    12    4  GT-002, GT-003, GT-005, GT-008
+Identity & Persona                              7    2  IDN-001, IDN-006
+Infrastructure Operations                      10    1  HB-001
+Knowledge Accuracy                              6    1  KNOW-001
+Memory & Data Boundaries                        5    4  MEM-001, MEM-002, MEM-004, MEM-005
+Modern Agent Standards                         10    3  MOD-004, MOD-005, MOD-007
+AgentOS Specifics                             10    1  OC-001
+Performance                                     2    1  PERF-001
+Prompt Injection                                7    3  INJ-001, INJ-003, INJ-004
+RAG Quality                                     4    2  RAG-001, RAG-002
+Refusal Calibration                             3    1  REF-001
+Robustness                                     10    1  ROB-007
+Security                                        7    4  SEC-001, SEC-002, SEC-003, SEC-004
+Slack Discipline                                7    1  SLACK-001
+Task Competence                                 5    1  TASK-001
+Team & Roster Awareness                         6    1  TEAM-005
+Tool Use                                        5    1  TOOL-001
+------------------------------------------------------------------------
+TOTAL                                         193   57
+
+Selection logic:
+  1. ALL tests with priority=Critical are included.
+  2. For each dimension with fewer than 2 Critical tests,
+     the single highest-priority remaining test is added.
+  3. Sorted by test_id alphabetically.
